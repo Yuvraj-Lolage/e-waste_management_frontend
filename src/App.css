@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url('./fonts/LeagueGothic-Regular-VariableFont_wdth.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SatoshiVariable';
+  src: url('./fonts/Satoshi-Variable.ttf');
+}
 .App {
   text-align: center;
 }

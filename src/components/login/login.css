@@ -1,0 +1,70 @@
+.container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.login-container{
+  width: 50%;
+  background-color: #45d82e53;
+  padding: 50px 50px;
+  border-radius: 20px;
+  color:rgb(59, 59, 59);
+}
+
+.forgot-passoword{
+  a{
+    color:rgb(95, 93, 93);
+  }
+}
+
+.facebook{
+  width: 100%;
+
+  .facebook-btn{
+    width: 100%;
+    background-color: #232323;
+    color: #e6e6e6;
+    font-size: large;
+    padding: 10px 5px;
+    margin: 10px 0px;
+  }
+}
+
+.google{
+  width: 100%;
+  .google-btn{
+    width: 100%;
+    background-color: #232323;
+    color: #e6e6e6;
+    font-size: large;
+    padding: 10px 5px;
+  }
+}
+
+.form-control{
+  width: 100%;
+    background-color: rgb(234, 234, 234);
+    color: #232323;
+    font-size: large;
+    padding: 10px 5px 10px 20px;
+}
+
+#login-btn{
+  width: 100%;
+  padding: 10px 5px;
+  color: aliceblue;
+  background-color: #06a819;
+  border-radius: 5px !important;
+}
+
+@media screen and (max-width:1000px) {
+  .login-container{
+    width: 100%;
+    background-color: #669C8F;
+    padding: 30px 20px;
+    border-radius: 5px;
+    color:white;
+  }
+}

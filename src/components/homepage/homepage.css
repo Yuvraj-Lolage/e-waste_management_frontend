@@ -1,0 +1,239 @@
+.cta-text {
+    margin: 0% 0% 0% 12%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+#reduce {
+    color: #669C8F;
+    font-family: 'LeagueGothic', sans-serif;
+    font-size: 115pt;
+    margin: 0;
+}
+
+#recycle {
+    color: #72BE2C;
+    font-family: 'LeagueGothic', sans-serif;
+    font-size: 135pt;
+    margin-top: -68px;
+}
+
+#reuse {
+    color: #669C8F;
+    font-family: 'LeagueGothic', sans-serif;
+    font-size: 115pt;
+    margin-top: -72px;
+}
+
+.img-fluid {
+    width: 90%;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tagline {
+    margin-top: -30px;
+    /* margin-right: 20px; */
+    font-size: 15pt;
+    /* font-style: italic; */
+}
+
+.cta-btn {
+    background-color: #66A5DD;
+    color: white;
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: large;
+    border-radius: 12px;
+}
+
+.cta-btn:hover {
+    background-color: #5085b3;
+    color: white;
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: large;
+    border-radius: 12px;
+}
+
+.e-waste {
+    padding: 12px 20px;
+    background-color: #669C8F;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.ewaste-img {
+    width: 80%;
+}
+
+.e-waste-text {
+    width: 100%;
+    color: white;
+    h2 {
+        font-family: 'SatoshiVariable', sans-serif;
+        font-weight: 600;     
+        font-size: 4rem;
+    }
+    span {
+        font-family: 'LeagueGothic', sans-serif;
+        color: #E3FF97;
+        font-size: 6rem;
+        font-weight: 500;
+    }
+}
+
+.paragraph {
+    width: 100%;
+    text-wrap: wrap;
+    font-family: 'SatoshiVariable';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.e-waste-btn{
+    background-color: #c6c6c658;
+    color: #E3FF97;
+    border: 1px #66A5DD solid;
+    padding: 12px 30px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.e-waste-btn:hover{
+    background-color: #a4a4a458;
+    color: #E3FF97;
+    border: 1px #66A5DD solid;
+}
+
+.importance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #669C8F;
+}
+
+
+.importance{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.description{
+    position: relative;
+    margin: 10px 60px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    h2 {
+        margin-bottom: 20px;
+        font-family: 'SatoshiVariable', sans-serif;
+        font-weight: 600;     
+        font-size: 3rem;
+    }
+    span {
+        font-family: 'LeagueGothic', sans-serif;
+        color: #E3FF97;
+        font-size: 4rem;
+        font-weight: 500;
+    }   
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 50px;
+    width: 100%;
+}
+@media screen and (max-width:1000px) {
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta-img {
+        margin-top: -40pt;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cta-text {
+        margin: 30px 0px 0px 50px;
+    }
+
+    #reduce {
+        font-size: 75pt;
+        margin: 0;
+    }
+
+    #recycle {
+        font-size: 95pt;
+        margin-top: -45px;
+    }
+
+    #reuse {
+        font-size: 75pt;
+        margin-top: -52px;
+    }
+
+    .e-waste {
+        padding: 0 20px;
+        background-color: #669C8F;
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .e-waste-text {
+        padding: 0px 0px 20px 20px;
+        text-justify: auto;
+        width: 100%;
+        color: white;
+        h2 {
+            font-family: 'SatoshiVariable', sans-serif;
+            font-weight: 600;     
+            font-size: 3rem;
+        }
+        span {
+            font-family: 'LeagueGothic', sans-serif;
+            color: #E3FF97;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+    }
+    
+    .paragraph {
+        width: 80%;
+        /* text-wrap: wrap; */
+        font-family: 'SatoshiVariable';
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .importance{
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .image{
+        width: 100%;
+    }
+    .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

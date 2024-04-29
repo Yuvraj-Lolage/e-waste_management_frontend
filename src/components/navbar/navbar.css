@@ -1,0 +1,49 @@
+.navbar{
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.279);
+}
+#navlink{
+    text-decoration: none !important;
+    font-size: 20px;
+    margin: 0px 20px;
+    font-weight: 400;
+    color: #000000cf;
+}   
+
+.active{
+    color: #669C8F !important;
+    font-weight: 500 !important;
+}
+
+.login-btn{
+    background-color: #669C8F !important;
+    color: white;
+    font-weight: 500;
+    padding: 0px 40px;
+    border-radius: 15px;
+}
+
+.login-btn:hover{
+    background-color: #4d786e;
+    color: white;
+}
+
+.brand-name{
+    color: #72BE2C;
+    font-size: 2rem;
+    padding: 0px 10px;
+    font-weight: 700 !important;
+}
+
+#navbarDropdownMenuLink{
+    text-decoration: none !important;
+    font-size: 20px;
+    margin: 0px 20px;
+    font-weight: 400;
+    color: #000000cf;
+}
+
+#username{
+    color: #669C8F;
+    font-weight: 700;
+}
