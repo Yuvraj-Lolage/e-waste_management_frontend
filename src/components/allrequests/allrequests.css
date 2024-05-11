@@ -1,0 +1,28 @@
+.card-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .card-img-top {
+    width: 300px;
+    margin-right: 20px;
+    padding: 20px;
+    /* margin: 20px 200px 20px 20px; Spacing between image and content */
+  }
+
+  .card-body {
+    flex: 1; /* Expand to fill remaining space */
+  }
+
+  .badge {
+    margin-right: 5px; /* Spacing between badges */
+  }
+
+@media screen and (max-width:767px) {
+    .card-horizontal{
+        flex-direction: column;
+    }
+    
+}

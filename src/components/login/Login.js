@@ -10,7 +10,6 @@ const Login = () => {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
-
         // Here you can access the email and password state variables
         try {
             await axios.post('http://localhost:5000/users/login', { email, password })

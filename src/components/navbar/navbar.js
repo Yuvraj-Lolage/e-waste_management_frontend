@@ -10,7 +10,7 @@ const Navbar = () => {
     { name: "Home", to: "/" },
     { name: "About us", to: "/about" },
     { name: "Ewaste Request", to: "/ewasteRequest" },
-    { name: "Contact us", to: "/contact" }
+    { name: "Buy Ewaste", to: "/viewRequests" }
   ];
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           {navlinks.map((link, index) => (
             <li className="nav-item" key={index}>
               <NavLink className="nav-link" id="navlink" to={link.to}>{link.name}</NavLink>
@@ -65,9 +65,9 @@ const Navbar = () => {
                 <i>Hello,</i> <span id='username'>{userName}</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link class="dropdown-item" to="/#" onClick={handleLogout}>Logout</Link>
-                <a class="dropdown-item" href="#">Another action</a>
+                <Link class="dropdown-item" to="/myRequests" >My Requests</Link>
                 <a class="dropdown-item" href="#">Something else here</a>
+                <Link class="dropdown-item" to="/#" onClick={handleLogout}>Logout</Link>
               </div>
             </li>}
           {!isLoggedIn && <button className="btn login-btn" >

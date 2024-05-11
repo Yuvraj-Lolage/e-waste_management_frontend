@@ -8,6 +8,7 @@ import EwasteForm from "./components/ewasteform/EwasteForm";
 import Login from "./components/login/Login";
 import Signup from "./components/signup/Signup";
 import Successpage from "./components/successpage/Successpage";
+import Allrequests from "./components/allrequests/Allrequests";
 
 
 function App() {
@@ -22,9 +23,7 @@ function App() {
         <Route path='/signup' element={ <Signup/> }/>
         <Route path='/ewasteRequest' element={ <EwasteForm/> }/>
         <Route path='/successMessage' element={ <Successpage/> }/>
-
-
-
+        <Route path='/viewRequests' element={ <Allrequests/> }/>
       </Routes>
     </BrowserRouter>
     </>
