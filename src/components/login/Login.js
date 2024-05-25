@@ -7,6 +7,8 @@ const Login = () => {
     const navigator = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [alert, setAlert] = useState(false);
+
 
     const handleFormSubmit = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
@@ -14,16 +16,32 @@ const Login = () => {
         try {
             await axios.post('http://localhost:5000/users/login', { email, password })
                 .then((response) => {
-                    localStorage.setItem('token', response.data);
+
+                    if (response.data.msg !== "User is not present") {
+                        console.log(response);
+                        localStorage.setItem('token', response.data);
+                        // const token = localStorage.getItem('token');
+                        window.location.reload();
+                        navigator(-1);
+                    } else {
+                        console.log("Invalid user");
+                        setAlert(true);
+                    }
                 })
-            window.location.reload();
-            navigator(-1);
+
+
+
+
         } catch (error) {
             console.log(error);
         }
     };
     return (
         <>
+            {alert && <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Important Note: </strong> Invalid User
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onClick={()=> setAlert(false)}></button>
+            </div>}
             <div class="container-main">
 
                 <div className='login-container'>

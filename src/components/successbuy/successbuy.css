@@ -1,0 +1,14 @@
+#custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+}
+
+#custom-card {
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.226);
+}

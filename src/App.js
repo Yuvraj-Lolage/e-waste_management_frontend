@@ -9,6 +9,10 @@ import Login from "./components/login/Login";
 import Signup from "./components/signup/Signup";
 import Successpage from "./components/successpage/Successpage";
 import Allrequests from "./components/allrequests/Allrequests";
+import MyRequests from "./components/myrequests/MyRequests";
+import OwnedEwaste from "./components/ownedEwaste/OwnedEwaste";
+import AboutUs from "./components/aboutus/AboutUs";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -18,13 +22,17 @@ function App() {
     <Navbar />
       <Routes>
         <Route path='/' element={ <Homepage/> }/>
-        <Route path='/about' element={ <div>About us Page</div> }/>
+        <Route path='/aboutus' element={ <AboutUs/> }/>
         <Route path='/login' element={ <Login/> }/>
         <Route path='/signup' element={ <Signup/> }/>
         <Route path='/ewasteRequest' element={ <EwasteForm/> }/>
         <Route path='/successMessage' element={ <Successpage/> }/>
+        <Route path='/successBuyMessage' element={ <Successpage/> }/>
         <Route path='/viewRequests' element={ <Allrequests/> }/>
+        <Route path='/myRequests' element={ <MyRequests/> }/>
+        <Route path='/ownedEwaste' element={ <OwnedEwaste/> }/>
       </Routes>
+      
     </BrowserRouter>
     </>
   );

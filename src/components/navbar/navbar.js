@@ -8,7 +8,7 @@ import { jwtDecode } from 'jwt-decode';
 const Navbar = () => {
   const navlinks = [
     { name: "Home", to: "/" },
-    { name: "About us", to: "/about" },
+    { name: "About us", to: "/aboutus" },
     { name: "Ewaste Request", to: "/ewasteRequest" },
     { name: "Buy Ewaste", to: "/viewRequests" }
   ];
@@ -66,7 +66,7 @@ const Navbar = () => {
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <Link class="dropdown-item" to="/myRequests" >My Requests</Link>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <Link class="dropdown-item" to="/ownedEwaste">Owned E-waste</Link>
                 <Link class="dropdown-item" to="/#" onClick={handleLogout}>Logout</Link>
               </div>
             </li>}

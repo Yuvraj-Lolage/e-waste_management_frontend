@@ -60,7 +60,6 @@ const Homepage = () => {
                     <img className='img-fluid importance-img' src={ importance } />
                 </section>
             </section>
-            <button className='btn submit-btn'>Hello</button>
         </>
     )
 }
